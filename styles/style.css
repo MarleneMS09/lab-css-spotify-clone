@@ -1,8 +1,239 @@
-/*
-Colors:
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+/* Colors*/
 
-*/
+:root {
+    --text-color: #1A1A1A;
+    --text-icons: #00B172;
+    --text-funcionality: #FFF;
+}
+
+/* Pricipal */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+   
+}
+
+
+/* Logo */
+
+.logo img {
+    width: 340px;
+    height: auto;
+    margin-left: 5%;
+}
+
+/* header & navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav li {
+    margin-right: 15px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-left: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: none;
+    margin-left: 20px;
+}
+
+/* Funcionality for changing color to letter from navbar*/
+nav a:hover {
+    font-size: 80px;
+    color: var(--text-icons);
+    transition: font-size 0.3s, color 0.3s;
+}
+
+/* First section - main */
+
+/* img */
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+/* texts of first section */ 
+
+.text-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.text-main h1 {
+    font-size: 13rem;
+    margin: 80px;
+    animation: moveH1 3s linear infinite;
+    white-space: nowrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* To adding moving to title of fist section */
+
+@keyframes moveH1 {
+    0% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+
+
+.text-main p {
+    font-size: 74px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+/* second section */
+
+#second-section h2 {
+    text-align: center;
+    font-size: 120px;
+    margin-top: 140px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.grid-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#second-section .grid-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #second-section .grid-item {
+    text-align: center;
+    flex: 1;
+    max-width: 30%;
+  }
+ .grid-item img {
+    width: 390px;
+    margin-top: 200px;
+ }
+  .grid-item h3 {
+    font-size: 90px;
+    margin-top: 80px;
+    color: var(--text-icons);
+  }
+  .grid-item p {
+    font-size: 55px;
+    margin-bottom: 390px;
+    margin-top: 80px;
+  }
+
+
+ 
+
+/* Third section */
+
+#third-section {
+    margin: 0px 80px;
+    margin-top: 40px;
+    background-color:var(--text-icons);
+}
+/* Ajustes para el título y textos */
+
+#titulo-grande {
+    font-size: 80px; 
+    margin-bottom: 20px;
+    margin-left: 220px;
+    color: var(--text-funcionality);
+}
+
+
+.bloque h2 {
+    font-size: 80px;
+    margin-left: 220px;
+    color: var(--text-funcionality);
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.bloque p {
+    font-size: 60px;
+    margin-left: 220px;
+    color: var(--text-funcionality);
+    margin-top: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contenido {
+    margin: 20px;
+}
+
+.contenido h4 {
+    font-size: 70px;
+    margin-left: 220px;
+    margin-bottom: 120px;
+    color: var(--text-funcionality);
+    text-decoration: underline;
+    text-decoration-thickness: 7px;
+    text-underline-offset: 25px;
+}
+
+  #imgs {
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo-container {
+    margin-left: 420px;
+    margin-top: 530px;
+
+}
+
+.reproductor-container {
+    margin: 120px;
+    align-items: flex-end;
+    margin-left: 550px;
+}
